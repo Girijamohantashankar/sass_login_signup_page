@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Signup Page</title>
+    <link rel="stylesheet" href="/assets/main.css">
+    <script src="https://kit.fontawesome.com/8a0d09789c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/8a0d09789c.css" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+ 
+    <!-- color theme -->
+
+    <div class="color-switcher">
+        <div class="color-switcher-btn">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3>select color</h3>
+
+        <div class="theme-buttons-container">
+          <span class="theme-buttons" data-color="#8e44ad" style="background-color: #8e44ad;"></span>
+          <span class="theme-buttons" data-color="#2980b9" style="background-color: #2980b9;"></span>
+          <span class="theme-buttons" data-color="#f39c12" style="background-color: #f39c12;"></span>
+          <span class="theme-buttons" data-color="#27ae60" style="background-color: #27ae60;"></span>
+          <span class="theme-buttons" data-color="#ea2027" style="background-color: #ea2027;"></span>
+          <span class="theme-buttons" data-color="#e84393" style="background-color: #e84393;"></span>
+          <span class="theme-buttons" data-color="#ff4757" style="background-color: #ff4757;"></span>
+          <span class="theme-buttons" data-color="#ffc312" style="background-color: #ffc312;"></span>
+          <span class="theme-buttons" data-color="##17c0eb" style="background-color: #17c0eb;"></span>
+          <span class="theme-buttons" data-color="#080808" style="background-color: #080808;"></span>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="signin-signup">
+
+            <!-- ====================signin Form=========================== -->
+
+            <form action="" class="sign-in-form" name="myForm" onsubmit="return validateForm()" method="post">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="Username" placeholder="Username" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="password" required>
+                </div>
+                <input type="submit" value="Login" class="btn">
+                <p class="social-text">Or Sign in with social Platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+
+            <!-- ====================signup Form=========================== -->
+            <form action="" class="sign-up-form" name="myForm" onsubmit="return validateForm()" method="post">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="Username" placeholder="Username" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="Email" placeholder="Email" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="password" required>
+                </div>
+                <input type="submit" value="sign up" class="btn">
+                <p class="social-text">Or Sign in with social Platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+
+<!-- ==========================panels-container========================== -->
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Our Member?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, necessitatibus! Laudantium
+                        voluptatibus fugit aut illo obcaecati labore a rerum, repellendus soluta nulla quos facere
+                        recusandae nostrum culpa quam dolor ut.</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="/assets/image/signin.svg" alt="image" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New Member?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, necessitatibus! Laudantium
+                        voluptatibus fugit aut illo obcaecati labore a rerum, repellendus soluta nulla quos facere
+                        recusandae nostrum culpa quam dolor ut.</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="/assets/image/signup.svg" alt="image" class="image">
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
